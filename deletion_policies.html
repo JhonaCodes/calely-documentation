@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calely - Políticas de Cuenta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .language-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-toggle button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .language-toggle button:hover {
+            background-color: #2980b9;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle">
+        <button onclick="toggleLanguage()">English / Español</button>
+    </div>
+
+    <div id="spanish-content" class="content">
+        <h1>Calely - Políticas e Instrucciones para Eliminar la Cuenta</h1>
+        
+        <h2>Proceso de Eliminación</h2>
+        <ol>
+            <li>Acceda a la aplicación e inicie sesión en su cuenta.</li>
+            <li>Abra el menú lateral (drawer) y haga clic en "Información del Perfil".</li>
+            <li>Busque y seleccione la opción "Eliminar Cuenta".</li>
+            <li>Lea cuidadosamente todas las advertencias presentadas.</li>
+            <li>Si está seguro de querer proceder, presione el botón "Eliminarme".</li>
+        </ol>
+
+        <h2>Advertencias Importantes</h2>
+        <ul>
+            <li>La eliminación de la cuenta es una acción irreversible.</li>
+            <li>El proceso de eliminación puede tardar hasta 74 horas en completarse.</li>
+            <li>Una vez iniciado el proceso, no tendrá acceso a su historial ni a las citas previas.</li>
+        </ul>
+
+        <h2>Política de Calificaciones</h2>
+        <p>Para mantener la integridad de nuestro sistema de calificaciones y prevenir el abuso, hemos implementado las siguientes medidas:</p>
+        <ol>
+            <li>Si un usuario elimina su cuenta y luego intenta registrarse nuevamente con el mismo correo electrónico, la calificación anterior se mantendrá asociada a ese correo.</li>
+            <li>Esta política aplica tanto para cuentas de empresas como para usuarios individuales.</li>
+            <li>El propósito es evitar que los usuarios puedan evadir calificaciones negativas simplemente eliminando y recreando sus cuentas.</li>
+        </ol>
+
+        <h2>Estrategia Adicional para Prevenir Evasión de Calificaciones</h2>
+        <p>Para reforzar la integridad del sistema de calificaciones, consideramos implementar las siguientes medidas adicionales:</p>
+        <ol>
+            <li><strong>Período de espera:</strong> Establecer un período de espera de 90 días antes de que un correo electrónico previamente utilizado pueda ser registrado nuevamente.</li>
+            <li><strong>Verificación de identidad:</strong> Implementar un proceso de verificación de identidad más riguroso para nuevos registros, especialmente si se detecta un patrón de eliminación y recreación de cuentas.</li>
+            <li><strong>Monitoreo de patrones:</strong> Utilizar algoritmos para detectar patrones sospechosos de creación y eliminación de cuentas asociados a una misma dirección IP o dispositivo.</li>
+            <li><strong>Calificaciones persistentes:</strong> Mantener un registro interno de calificaciones asociadas no solo al correo electrónico, sino también a otros identificadores únicos (como número de teléfono o documento de identidad) para prevenir evasiones más sofisticadas.</li>
+            <li><strong>Educación del usuario:</strong> Proporcionar información clara sobre estas políticas durante el proceso de registro y eliminación de cuentas para disuadir intentos de evasión de calificaciones negativas.</li>
+        </ol>
+        <p>Estas estrategias adicionales buscan mantener la confiabilidad del sistema de calificaciones mientras se respeta la privacidad de los usuarios y se les permite gestionar sus cuentas de manera responsable.</p>
+    </div>
+
+    <div id="english-content" class="content hidden">
+        <h1>Calely - Account Deletion Policies and Instructions</h1>
+        
+        <h2>Deletion Process</h2>
+        <ol>
+            <li>Access the application and log into your account.</li>
+            <li>Open the side menu (drawer) and click on "Profile Information".</li>
+            <li>Find and select the "Delete Account" option.</li>
+            <li>Carefully read all the warnings presented.</li>
+            <li>If you are sure you want to proceed, press the "Delete Me" button.</li>
+        </ol>
+
+        <h2>Important Warnings</h2>
+        <ul>
+            <li>Account deletion is an irreversible action.</li>
+            <li>The deletion process may take up to 74 hours to complete.</li>
+            <li>Once the process is initiated, you will not have access to your history or previous appointments.</li>
+        </ul>
+
+        <h2>Ratings Policy</h2>
+        <p>To maintain the integrity of our rating system and prevent abuse, we have implemented the following measures:</p>
+        <ol>
+            <li>If a user deletes their account and then attempts to register again with the same email address, the previous rating will remain associated with that email.</li>
+            <li>This policy applies to both business accounts and individual users.</li>
+            <li>The purpose is to prevent users from evading negative ratings simply by deleting and recreating their accounts.</li>
+        </ol>
+
+        <h2>Additional Strategy to Prevent Rating Evasion</h2>
+        <p>To reinforce the integrity of the rating system, we are considering implementing the following additional measures:</p>
+        <ol>
+            <li><strong>Waiting period:</strong> Establish a 90-day waiting period before a previously used email can be registered again.</li>
+            <li><strong>Identity verification:</strong> Implement a more rigorous identity verification process for new registrations, especially if a pattern of account deletion and recreation is detected.</li>
+            <li><strong>Pattern monitoring:</strong> Use algorithms to detect suspicious patterns of account creation and deletion associated with the same IP address or device.</li>
+            <li><strong>Persistent ratings:</strong> Maintain an internal record of ratings associated not only with the email address but also with other unique identifiers (such as phone number or identity document) to prevent more sophisticated evasions.</li>
+            <li><strong>User education:</strong> Provide clear information about these policies during the account registration and deletion process to discourage attempts to evade negative ratings.</li>
+        </ol>
+        <p>These additional strategies seek to maintain the reliability of the rating system while respecting user privacy and allowing them to manage their accounts responsibly.</p>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const spanishContent = document.getElementById('spanish-content');
+            const englishContent = document.getElementById('english-content');
+            spanishContent.classList.toggle('hidden');
+            englishContent.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
